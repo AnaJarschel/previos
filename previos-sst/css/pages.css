@@ -1,0 +1,231 @@
+/* CABEÇALHO */
+
+.page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+}
+
+/* CARDS DO DASHBOARD */
+
+.cards {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 15px;
+
+    margin-bottom: 35px;
+}
+
+.card {
+    background: white;
+
+    border: 1px solid var(--borda);
+
+    border-radius: 16px;
+
+    padding: 25px;
+}
+
+.card strong {
+    display: block;
+
+    font-size: 36px;
+
+    color: var(--verde);
+
+    margin-bottom: 10px;
+}
+
+.card span {
+    font-size: 14px;
+}
+
+/* ACESSO RÁPIDO */
+
+.acesso-rapido {
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 12px;
+
+    margin-bottom: 35px;
+}
+
+.acesso-rapido a {
+    background: white;
+
+    border: 1px solid var(--borda);
+
+    border-radius: 14px;
+
+    padding: 25px 15px;
+
+    text-align: center;
+
+    color: var(--texto);
+
+    font-size: 14px;
+}
+
+.acesso-rapido a:hover {
+    border-color: var(--verde);
+}
+
+/* TABELAS */
+
+.tabela-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background: #E9EBF0;
+}
+
+th,
+td {
+    padding: 13px;
+
+    text-align: left;
+
+    border-bottom: 1px solid #EEEEEE;
+
+    font-size: 13px;
+}
+
+th {
+    font-weight: bold;
+}
+
+/* FORMULÁRIOS */
+
+.form-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px;
+}
+
+.form-grid-3 {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+.form-acoes {
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 10px;
+
+    margin-top: 25px;
+}
+
+/* VISITAS */
+
+.visitas-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+.visita {
+    padding: 15px 0;
+
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.visita:last-child {
+    border-bottom: none;
+}
+
+.visita p {
+    margin: 7px 0;
+    color: var(--cinza);
+}
+
+/* RISCOS */
+
+.riscos {
+    border: 1px solid var(--borda);
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+.risco {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 15px;
+
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.risco:last-child {
+    border-bottom: none;
+}
+
+/* FILTROS */
+
+.filtros {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr auto;
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 1100px) {
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .acesso-rapido {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+@media (max-width: 700px) {
+
+    .page-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .cards,
+    .acesso-rapido,
+    .form-grid,
+    .form-grid-3,
+    .visitas-grid,
+    .filtros {
+        grid-template-columns: 1fr;
+    }
+
+}

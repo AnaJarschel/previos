@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PREVIOS | Levantamentos SST</title>
+
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/pages.css">
+
+</head>
+
+
+<body>
+
+
+<div class="app">
+
+
+    <aside class="sidebar">
+
+
+        <div class="logo">
+            <img src="../assets/img/logo.png" alt="MEDCAP">
+        </div>
+
+        <nav class="menu">
+
+            <a href="../index.html">
+                Dashboard
+            </a>
+
+            <a href="empresas.html">
+                Empresas
+            </a>
+
+            <a href="funcionarios.html">
+                Funcionários
+            </a>
+
+            <a href="visitas.html">
+                Visitas Técnicas
+            </a>
+
+            <a href="levantamentos.html" class="active">
+                Levantamentos SST
+            </a>
+
+            <a href="documentos.html">
+                Documentos
+            </a>
+
+        </nav>
+
+
+        <div class="usuario">
+
+            <div class="avatar">
+                F
+            </div>
+
+            <div class="usuario-info">
+
+                <strong>
+                    Fulano
+                </strong>
+
+                <span>
+                    Sair
+                </span>
+
+            </div>
+
+        </div>
+
+
+    </aside>
+
+
+    <main class="conteudo">
+
+
+        <div class="page-header">
+
+            <div>
+
+                <h1>
+                    Levantamento de SST
+                </h1>
+
+                <p>
+                    Registro dos riscos identificados durante as visitas técnicas.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <section class="painel">
+
+
+            <div class="form-grid-3">
+
+
+                <div class="campo">
+
+                    <label>
+                        Empresa
+                    </label>
+
+                    <select>
+
+                        <option>
+                            Selecione
+                        </option>
+
+                        <option>
+                            Empresa ABC
+                        </option>
+
+                        <option>
+                            Comercio Ltda.
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label>
+                        Setor
+                    </label>
+
+                    <select>
+
+                        <option>
+                            Selecione
+                        </option>
+
+                        <option>
+                            Produção
+                        </option>
+
+                        <option>
+                            Administrativo
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label>
+                        Função
+                    </label>
+
+                    <select>
+
+                        <option>
+                            Selecione
+                        </option>
+
+                        <option>
+                            Operador de Máquina
+                        </option>
+
+                        <option>
+                            Auxiliar
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+        <section class="painel">
+
+
+            <h2>
+                Riscos Identificados
+            </h2>
+
+
+            <div class="riscos">
+
+
+                <div class="risco">
+
+                    <div>
+
+                        <strong>
+                            Ruído
+                        </strong>
+
+                        <small>
+                            Físico
+                        </small>
+
+                    </div>
+
+                    <span class="status warning">
+                        Médio
+                    </span>
+
+                </div>
+
+
+                <div class="risco">
+
+                    <div>
+
+                        <strong>
+                            Produtos Químicos
+                        </strong>
+
+                        <small>
+                            Químico
+                        </small>
+
+                    </div>
+
+                    <span class="status danger">
+                        Alto
+                    </span>
+
+                </div>
+
+
+                <div class="risco">
+
+                    <div>
+
+                        <strong>
+                            Queda em Altura
+                        </strong>
+
+                        <small>
+                            Acidente
+                        </small>
+
+                    </div>
+
+                    <span class="status warning">
+                        Médio
+                    </span>
+
+                </div>
+
+
+                <div class="risco">
+
+                    <div>
+
+                        <strong>
+                            Máquina e Equipamentos
+                        </strong>
+
+                        <small>
+                            Mecânico
+                        </small>
+
+                    </div>
+
+                    <span class="status warning">
+                        Médio
+                    </span>
+
+                </div>
+
+
+                <div class="risco">
+
+                    <div>
+
+                        <strong>
+                            Exposição Solar
+                        </strong>
+
+                        <small>
+                            Físico
+                        </small>
+
+                    </div>
+
+                    <span class="status info">
+                        Baixo
+                    </span>
+
+                </div>
+
+
+                <div class="risco">
+
+                    <div>
+
+                        <strong>
+                            Equipamento Elétrico
+                        </strong>
+
+                        <small>
+                            Mecânico
+                        </small>
+
+                    </div>
+
+                    <span class="status warning">
+                        Médio
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+        <section class="painel">
+
+
+            <h2>
+                Observações
+            </h2>
+
+
+            <div class="campo">
+
+                <textarea
+                    rows="6"
+                    placeholder="Digite as observações do levantamento..."
+                ></textarea>
+
+            </div>
+
+
+            <div class="form-acoes">
+
+                <button class="btn btn-primary">
+                    Salvar Levantamento
+                </button>
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+</div>
+
+
+<script src="../js/app.js"></script>
+
+</body>
+
+</html>

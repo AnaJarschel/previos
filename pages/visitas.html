@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PREVIOS | Visitas Técnicas</title>
+
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/pages.css">
+
+</head>
+
+
+<body>
+
+
+<div class="app">
+
+
+    <aside class="sidebar">
+
+        <div class="logo">
+            <img src="../assets/img/logo.png" alt="MEDCAP">
+        </div>
+
+
+        <nav class="menu">
+
+            <a href="../index.html">
+                Dashboard
+            </a>
+
+            <a href="empresas.html">
+                Empresas
+            </a>
+
+            <a href="funcionarios.html">
+                Funcionários
+            </a>
+
+            <a href="visitas.html" class="active">
+                Visitas Técnicas
+            </a>
+
+            <a href="levantamentos.html">
+                Levantamentos SST
+            </a>
+
+            <a href="documentos.html">
+                Documentos
+            </a>
+
+        </nav>
+
+
+        <div class="usuario">
+
+            <div class="avatar">
+                F
+            </div>
+
+            <div class="usuario-info">
+
+                <strong>
+                    Fulano
+                </strong>
+
+                <span>
+                    Sair
+                </span>
+
+            </div>
+
+        </div>
+
+
+    </aside>
+
+
+    <main class="conteudo">
+
+
+        <div class="page-header">
+
+            <div>
+
+                <h1>
+                    Visitas Técnicas
+                </h1>
+
+                <p>
+                    Agendamento e acompanhamento das visitas técnicas.
+                </p>
+
+            </div>
+
+
+            <button class="btn btn-primary">
+                + Agendar Visita
+            </button>
+
+        </div>
+
+
+        <div class="visitas-grid">
+
+
+            <section class="painel">
+
+                <h2>
+                    Próximas visitas
+                </h2>
+
+
+                <div class="visita">
+
+                    <strong>
+                        10/09/2026
+                    </strong>
+
+                    <p>
+                        Comercio Ltda. - Unidade 2
+                    </p>
+
+                    <span class="status ok">
+                        Agendada
+                    </span>
+
+                </div>
+
+
+                <div class="visita">
+
+                    <strong>
+                        12/09/2026
+                    </strong>
+
+                    <p>
+                        Fortunato & Cia
+                    </p>
+
+                    <span class="status ok">
+                        Agendada
+                    </span>
+
+                </div>
+
+
+                <div class="visita">
+
+                    <strong>
+                        15/09/2026
+                    </strong>
+
+                    <p>
+                        LancheMio Ltda.
+                    </p>
+
+                    <span class="status warning">
+                        Aguardando
+                    </span>
+
+                </div>
+
+
+            </section>
+
+
+            <section class="painel">
+
+                <h2>
+                    Visitas recentes
+                </h2>
+
+
+                <div class="visita">
+
+                    <strong>
+                        05/09/2026
+                    </strong>
+
+                    <p>
+                        Comercio Ltda.
+                    </p>
+
+                    <span class="status ok">
+                        Concluída
+                    </span>
+
+                </div>
+
+
+                <div class="visita">
+
+                    <strong>
+                        03/09/2026
+                    </strong>
+
+                    <p>
+                        Fortunato & Cia
+                    </p>
+
+                    <span class="status danger">
+                        Cancelada
+                    </span>
+
+                </div>
+
+
+            </section>
+
+
+        </div>
+
+
+        <section class="painel">
+
+            <h2>
+                Agendar visita
+            </h2>
+
+
+            <div class="form-grid">
+
+
+                <div class="campo">
+
+                    <label>
+                        Empresa
+                    </label>
+
+                    <select>
+
+                        <option>
+                            Selecione
+                        </option>
+
+                        <option>
+                            Comercio Ltda.
+                        </option>
+
+                        <option>
+                            Fortunato & Cia
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label>
+                        Responsável
+                    </label>
+
+                    <input type="text">
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label>
+                        Data
+                    </label>
+
+                    <input type="date">
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label>
+                        Horário
+                    </label>
+
+                    <input type="time">
+
+                </div>
+
+
+            </div>
+
+
+            <div class="form-acoes">
+
+                <button class="btn btn-primary">
+                    Agendar Visita
+                </button>
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+</div>
+
+
+<script src="../js/app.js"></script>
+
+</body>
+
+</html>

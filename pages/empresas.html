@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PREVIOS | Empresas</title>
+
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/pages.css">
+
+</head>
+
+
+<body>
+
+
+<div class="app">
+
+
+    <!-- MENU -->
+
+    <aside class="sidebar">
+
+
+        <div class="logo">
+            <img src="../assets/img/logo.png" alt="MEDCAP">
+        </div>
+
+
+        <nav class="menu">
+
+            <a href="../index.html">
+                Dashboard
+            </a>
+
+            <a href="empresas.html" class="active">
+                Empresas
+            </a>
+
+            <a href="funcionarios.html">
+                Funcionários
+            </a>
+
+            <a href="visitas.html">
+                Visitas Técnicas
+            </a>
+
+            <a href="levantamentos.html">
+                Levantamentos SST
+            </a>
+
+            <a href="documentos.html">
+                Documentos
+            </a>
+
+        </nav>
+
+
+        <div class="usuario">
+
+            <div class="avatar">
+                F
+            </div>
+
+            <div class="usuario-info">
+
+                <strong>
+                    Fulano
+                </strong>
+
+                <span>
+                    Sair
+                </span>
+
+            </div>
+
+        </div>
+
+
+    </aside>
+
+
+    <!-- CONTEÚDO -->
+
+    <main class="conteudo">
+
+
+        <div class="page-header">
+
+            <div>
+
+                <h1>
+                    Empresas
+                </h1>
+
+                <p>
+                    Cadastro e gerenciamento das empresas clientes.
+                </p>
+
+            </div>
+
+
+            <button class="btn btn-primary">
+                + Nova empresa
+            </button>
+
+        </div>
+
+
+        <!-- CADASTRO -->
+
+        <section class="painel">
+
+
+            <h2>
+                Cadastro da empresa
+            </h2>
+
+
+            <div class="form-grid">
+
+
+                <div class="campo">
+
+                    <label>
+                        CNPJ
+                    </label>
+
+                    <input
+                        type="text"
+                        placeholder="00.000.000/0000-00"
+                    >
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label>
+                        Razão Social
+                    </label>
+
+                    <input
+                        type="text"
+                        placeholder="Razão Social"
+                    >
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label>
+                        Nome Fantasia
+                    </label>
+
+                    <input
+                        type="text"
+                        placeholder="Nome Fantasia"
+                    >
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label>
+                        Inscrição Estadual
+                    </label>
+
+                    <input
+                        type="text"
+                        placeholder="Inscrição Estadual"
+                    >
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label>
+                        CEP
+                    </label>
+
+                    <input
+                        type="text"
+                        placeholder="CEP"
+                    >
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label>
+                        Número
+                    </label>
+
+                    <input
+                        type="text"
+                        placeholder="Número"
+                    >
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label>
+                        Endereço
+                    </label>
+
+                    <input
+                        type="text"
+                        placeholder="Endereço"
+                    >
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label>
+                        Bairro
+                    </label>
+
+                    <input
+                        type="text"
+                        placeholder="Bairro"
+                    >
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label>
+                        Cidade
+                    </label>
+
+                    <input
+                        type="text"
+                        placeholder="Cidade"
+                    >
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label>
+                        UF
+                    </label>
+
+                    <select>
+
+                        <option>
+                            Selecione
+                        </option>
+
+                        <option>
+                            PR
+                        </option>
+
+                        <option>
+                            SC
+                        </option>
+
+                        <option>
+                            SP
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label>
+                        E-mail
+                    </label>
+
+                    <input
+                        type="email"
+                        placeholder="empresa@email.com"
+                    >
+
+                </div>
+
+
+                <div class="campo">
+
+                    <label>
+                        Telefone
+                    </label>
+
+                    <input
+                        type="text"
+                        placeholder="(00) 00000-0000"
+                    >
+
+                </div>
+
+
+            </div>
+
+
+            <div class="form-acoes">
+
+                <button class="btn btn-primary">
+                    Novo
+                </button>
+
+                <button class="btn btn-primary">
+                    Salvar
+                </button>
+
+                <button class="btn btn-primary">
+                    Alterar
+                </button>
+
+                <button class="btn btn-primary">
+                    Inativar
+                </button>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- LISTA -->
+
+        <section class="painel">
+
+
+            <h2>
+                Empresas cadastradas
+            </h2>
+
+
+            <div class="tabela-container">
+
+
+                <table>
+
+
+                    <thead>
+
+                        <tr>
+
+                            <th>
+                                Nome da Empresa
+                            </th>
+
+                            <th>
+                                CNPJ
+                            </th>
+
+                            <th>
+                                Cidade
+                            </th>
+
+                            <th>
+                                Status
+                            </th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+
+                        <tr>
+
+                            <td>
+                                Comercio Ltda. - Unidade 2
+                            </td>
+
+                            <td>
+                                06.684.694/0001-06
+                            </td>
+
+                            <td>
+                                Cascavel
+                            </td>
+
+                            <td>
+
+                                <span class="status ok">
+                                    Ativa
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                Fortunato & Cia
+                            </td>
+
+                            <td>
+                                12.345.678/0001-09
+                            </td>
+
+                            <td>
+                                Cascavel
+                            </td>
+
+                            <td>
+
+                                <span class="status ok">
+                                    Ativa
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>
+                                LancheMio Ltda.
+                            </td>
+
+                            <td>
+                                34.567.891/0001-01
+                            </td>
+
+                            <td>
+                                Capitão Leônidas
+                            </td>
+
+                            <td>
+
+                                <span class="status ok">
+                                    Ativa
+                                </span>
+
+                            </td>
+
+                        </tr>
+
+
+                    </tbody>
+
+
+                </table>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+</div>
+
+
+<script src="../js/app.js"></script>
+
+</body>
+
+</html>

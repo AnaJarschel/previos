@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--fundo);
+    color: var(--texto);
+}
+
+a {
+    text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+.app {
+    display: flex;
+    min-height: 100vh;
+}
+
+.conteudo {
+    flex: 1;
+    padding: 35px;
+    min-width: 0;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+.conteudo > p {
+    color: var(--cinza);
+    margin-bottom: 30px;
+}
+
+/* BOTÕES */
+
+.btn {
+    border: none;
+    border-radius: 8px;
+    padding: 11px 20px;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background: var(--verde);
+    color: white;
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+}
+
+/* PAINÉIS */
+
+.painel {
+    background: white;
+    border: 1px solid var(--borda);
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 25px;
+}
+
+/* CAMPOS */
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.campo label {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    border: 1px solid var(--borda);
+    border-radius: 7px;
+    padding: 10px;
+    outline: none;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    border-color: var(--verde);
+}
+
+/* STATUS */
+
+.status {
+    display: inline-block;
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.status.ok {
+    background: var(--verde-claro);
+    color: #087548;
+}
+
+.status.warning {
+    background: var(--amarelo-claro);
+    color: #9A6800;
+}
+
+.status.danger {
+    background: var(--vermelho-claro);
+    color: var(--vermelho);
+}
+
+.status.info {
+    background: var(--azul-claro);
+    color: #08718E;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 900px) {
+
+    .app {
+        flex-direction: column;
+    }
+
+    .conteudo {
+        padding: 25px;
+    }
+
+}
